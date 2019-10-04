@@ -5,14 +5,25 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="@string/paletteActivity_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".CanvasActivity"
+            android:label="@string/canvasActivity_name">
+        </activity>
+
+
+
         <activity
             android:name=".ColorAdapter"
             android:label="@string/title_activity_color_adapter"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+
         <activity android:name=".PaletteActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">ColorPicker2</string>
     <string name="title_activity_color_adapter">ColorAdapter</string>
+    <string name="canvasActivity_name">CanvasActivity</string>
+    <string name="paletteActivity_name">PaletteActivity</string>
+
+
 </resources>
