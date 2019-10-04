@@ -14,37 +14,26 @@ public class PaletteActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
         final String[] colors = {"Choose a color", "Red", "Blue", "Green", "Magenta", "Purple", "Black", "Yellow", "White", "Cyan", "Grey"};
 
-        Spinner spinner = findViewById(R.id.spinner);
+        final Spinner spinner = findViewById(R.id.spinner);
         ColorAdapter adapter = new ColorAdapter(this,colors);
         spinner.setAdapter(adapter);
-        spinner.setSelection(0,false);
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                //TextView textView = (TextView) view;
-                //String colorValue = textView.getText().toString();
-
-                Intent intent = new Intent(PaletteActivity.this,CanvasActivity.class);
-                intent.putExtra("colorName",colors[position]);
-                startActivity(intent);
-
-                /*
-                try {
-                    findViewById(R.id.backgroundID).setBackgroundColor(Color.parseColor(textView.getText().toString()));
+                if(!colors[position].equals("Choose a color")) {
+                    Intent intent = new Intent(PaletteActivity.this, CanvasActivity.class);
+                    intent.putExtra("colorName", colors[position]);
+                    startActivity(intent);
+                    spinner.setSelection(0,false);
                 }
-                catch (Exception e)
-                {
-                    findViewById(R.id.backgroundID).setBackgroundColor(Color.WHITE);
-                }*/
             }
 
             @Override
