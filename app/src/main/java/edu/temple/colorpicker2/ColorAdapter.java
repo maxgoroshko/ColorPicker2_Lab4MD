@@ -20,10 +20,12 @@ public class ColorAdapter extends BaseAdapter {
     Context context;
 
     String[] colors;
+    String[] engColors;
 
     public ColorAdapter(Context context, String[] colors) {
         this.context = context;
         this.colors = colors;
+        engColors = context.getResources().getStringArray(R.array.engColors);
     }
     @Override
     public int getCount() {
@@ -70,7 +72,7 @@ public class ColorAdapter extends BaseAdapter {
 
         try{
             textView.setTextColor(Color.BLACK);
-            textView.setBackgroundColor(Color.parseColor(textView.getText().toString()));
+            textView.setBackgroundColor(Color.parseColor(engColors[position]));
         }
         catch (Exception e)
         {

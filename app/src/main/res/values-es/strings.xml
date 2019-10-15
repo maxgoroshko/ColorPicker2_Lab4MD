@@ -5,7 +5,22 @@
     <string name="canvasActivity_name">CanvasActivityES</string>
     <string name="paletteActivity_name">PaletteActivityES</string>
     <string name="appName">ColorPicker2ES</string>
+
     <string-array name="colors">
+        <item>Elige un color</item>
+        <item>Rojo</item>
+        <item>Azul</item>
+        <item>Verde</item>
+        <item>Magenta</item>
+        <item>Púrpura</item>
+        <item>Negro</item>
+        <item>Amarillo</item>
+        <item>Blanco</item>
+        <item>Cian</item>
+        <item>Gris</item>
+    </string-array>
+
+    <string-array name="engColors">
         <item>Choose a color</item>
         <item>Red</item>
         <item>Blue</item>
