@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ColorPicker2</string>
-    <string name="title_activity_color_adapter">ColorAdapter</string>
-    <string name="canvasActivity_name">CanvasActivity</string>
-    <string name="paletteActivity_name">PaletteActivity</string>
-    <string name="appName">ColorPicker2</string>
+    <string name="app_name">ColorPicker2ES</string>
+    <string name="title_activity_color_adapter">ColorAdapterES</string>
+    <string name="canvasActivity_name">CanvasActivityES</string>
+    <string name="paletteActivity_name">PaletteActivityES</string>
+    <string name="appName">ColorPicker2ES</string>
     <string-array name="colors">
         <item>Choose a color</item>
         <item>Red</item>
