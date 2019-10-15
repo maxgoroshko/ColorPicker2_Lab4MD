@@ -23,8 +23,6 @@ public class PaletteActivity extends AppCompatActivity {
 
         Resources res = this.getResources();
         final String [] gridlabels = res.getStringArray(R.array.colors);
-        final String [] gridlabelsEng = res.getStringArray(R.array.engColors);
-
 
         final Spinner spinner = findViewById(R.id.spinner);
         ColorAdapter adapter = new ColorAdapter(this,gridlabels);
