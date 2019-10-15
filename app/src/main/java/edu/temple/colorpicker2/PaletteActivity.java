@@ -24,20 +24,19 @@ public class PaletteActivity extends AppCompatActivity {
         Resources res = this.getResources();
         final String [] gridlabels = res.getStringArray(R.array.colors);
 
+
         final Spinner spinner = findViewById(R.id.spinner);
         ColorAdapter adapter = new ColorAdapter(this,gridlabels);
         spinner.setAdapter(adapter);
+        spinner.setSelection(0,false);
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if(!gridlabels[position].equals("Elige un color")) {
                     Intent intent = new Intent(PaletteActivity.this, CanvasActivity.class);
                     intent.putExtra("colorName", position);
                     startActivity(intent);
-                    spinner.setSelection(0,false);
-                }
             }
 
             @Override
